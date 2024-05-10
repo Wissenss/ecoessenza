@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center #cards-container within main */
+    flex-grow: 1;
+}
+
+#cards-container {
+    height: 200px;
+    width: 50px;
+    background-color: rebeccapurple;
+}
