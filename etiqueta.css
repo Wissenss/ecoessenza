@@ -11,18 +11,26 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center text horizontally */
-    text-align: center; /* Ensure text is centered */
+    justify-content: center; 
+    text-align: center;
+    padding: 20px;
 }
 
 main {
     display: flex;
-    justify-content: center; /* Center #cards-container within main */
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
 }
 
 #cards-container {
-    height: 200px;
-    width: 50px;
-    background-color: rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 1200px;
+}
+
+.card {
+    margin-bottom: 20px;
 }
