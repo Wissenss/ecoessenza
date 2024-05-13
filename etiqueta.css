@@ -6,6 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(204, 219, 170);
 }
 
 header {
