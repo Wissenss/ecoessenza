@@ -83,6 +83,10 @@ main {
     margin-bottom: 20px;
 }
 
+.card-text{
+    padding: 5px;
+}
+
 .card > h6, h5, td{
     text-align: center;
 }
