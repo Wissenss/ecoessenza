@@ -17,11 +17,58 @@ header {
     padding: 20px;
 }
 
+#general-info
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%; 
+
+    align-self: center;
+
+    margin: auto;
+    
+    max-width: 1200px;
+
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#general-info > p{
+    text-align: center;
+}
+
+#general-info-attributes{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* max-width: 200px; */
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width: 600px) {
+    #general-info-attributes {
+        flex-wrap: wrap;
+    }
+}
+
+.general-info-attribute{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    width: 100%;
 }
 
 #cards-container {
@@ -34,4 +81,38 @@ main {
 
 .card {
     margin-bottom: 20px;
+}
+
+.card > h6, h5, td{
+    text-align: center;
+}
+
+.card-body > h6, h5, td{
+    text-align: center;
+}
+
+.card-body > p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer{
+    padding: 20px;
+
+    /* background-color: rgb(100, 117, 62);; */
+}
+
+footer > h5 {
+    padding-top: 20px;
+    border-top: 1px solid gray;
+}
+
+footer > span::before{
+    font-size: 30px;
+}
+
+#footer-social-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }
